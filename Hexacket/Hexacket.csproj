@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88A150A1-EC12-4F89-A1D2-13A25F772FA3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hexacket</RootNamespace>
+    <AssemblyName>Hexacket</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Connection.Designer.cs">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="quicklz-x64\quicklz150_64_1.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_1_1000000.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_1_1000000_safe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_1_safe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_2.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_2_1000000.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_2_1000000_safe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_2_safe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_3.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_3_1000000.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_3_1000000_safe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="quicklz-x64\quicklz150_64_3_safe.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Proxy.cnf" />
+    <None Include="quicklz-x64\quicklz150_64_1.exp" />
+    <None Include="quicklz-x64\quicklz150_64_1.lib" />
+    <None Include="quicklz-x64\quicklz150_64_1_1000000.exp" />
+    <None Include="quicklz-x64\quicklz150_64_1_1000000.lib" />
+    <None Include="quicklz-x64\quicklz150_64_1_1000000_safe.exp" />
+    <None Include="quicklz-x64\quicklz150_64_1_1000000_safe.lib" />
+    <None Include="quicklz-x64\quicklz150_64_1_safe.exp" />
+    <None Include="quicklz-x64\quicklz150_64_1_safe.lib" />
+    <None Include="quicklz-x64\quicklz150_64_2.exp" />
+    <None Include="quicklz-x64\quicklz150_64_2.lib" />
+    <None Include="quicklz-x64\quicklz150_64_2_1000000.exp" />
+    <None Include="quicklz-x64\quicklz150_64_2_1000000.lib" />
+    <None Include="quicklz-x64\quicklz150_64_2_1000000_safe.exp" />
+    <None Include="quicklz-x64\quicklz150_64_2_1000000_safe.lib" />
+    <None Include="quicklz-x64\quicklz150_64_2_safe.exp" />
+    <None Include="quicklz-x64\quicklz150_64_2_safe.lib" />
+    <None Include="quicklz-x64\quicklz150_64_3.exp" />
+    <None Include="quicklz-x64\quicklz150_64_3.lib" />
+    <None Include="quicklz-x64\quicklz150_64_3_1000000.exp" />
+    <None Include="quicklz-x64\quicklz150_64_3_1000000.lib" />
+    <None Include="quicklz-x64\quicklz150_64_3_1000000_safe.exp" />
+    <None Include="quicklz-x64\quicklz150_64_3_1000000_safe.lib" />
+    <None Include="quicklz-x64\quicklz150_64_3_safe.exp" />
+    <None Include="quicklz-x64\quicklz150_64_3_safe.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Connection.resx">
+      <DependentUpon>Connection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
